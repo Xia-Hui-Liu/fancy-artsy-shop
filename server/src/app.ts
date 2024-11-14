@@ -1,6 +1,6 @@
 import express from 'express';
 import productRoutes from './routes/products';
-import exp from 'constants';
+
 
 const app = express();
 
