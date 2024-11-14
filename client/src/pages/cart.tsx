@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartProvider } from '../context/CartContext'; 
 import Cart from '../components/Cart'; 
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar/Navbar';
 
 const CartPage: React.FC = () => {
   return (

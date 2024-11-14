@@ -10,6 +10,16 @@ const Cart: React.FC = () => {
     [cart]
   );
 
+  // Format price function
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('sv-SE', { 
+      style: 'currency', 
+      currency: 'SEK',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
@@ -27,16 +37,16 @@ const Cart: React.FC = () => {
                   height={80}  
                   className="w-20 h-20 object-cover"
                 />
-                  <p className="font-semibold m-10">{item.name}</p>
-                  <p>{item.price.toLocaleString('sv-SE')} SEK</p>
+                <p className="font-semibold m-10">{item.name}</p>
+                <p suppressHydrationWarning>{formatPrice(item.price)}</p>
               </div>
             </li>
           ))}
         </ul>
       )}
       <div className="mt-5 flex items-center justify-between">
-        <div className="font-semibold text-gray-700">
-          Total: {totalCost.toLocaleString('sv-SE')} SEK
+        <div className="font-semibold text-gray-700" suppressHydrationWarning>
+          Total: {formatPrice(totalCost)}
         </div>
         <button onClick={clearCart} className="bg-[#DC840A] text-white py-2 px-4 rounded-md hover:bg-blue-600">
           Delete all
@@ -45,7 +55,6 @@ const Cart: React.FC = () => {
           Checkout
         </button>
       </div>
-
     </div>
   );
 };

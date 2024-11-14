@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import { fetchProducts } from '../services/api';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar/Navbar';
 import { useCart } from '../context/CartContext';
 import { Product } from '../types/product';
 
