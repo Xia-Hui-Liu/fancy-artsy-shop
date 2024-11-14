@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Art and decoration",
+      "router":"Art-and-decoration",
+      "imageUrl": "/images/craft-resin.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Deep pour resin",
+      "router":"Deep-pour-resin",
+      "imageUrl": "/images/deep-pour.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Floor resin",
+      "router":"Floor-resin",
+      "imageUrl": "/images/IMG6.JPG"
+    },
+    {
+        "id": 4,
+        "name": "Industrial resin",
+        "imageUrl": "/images/industrial-resin.jpg"
+      }
+]
+  
