@@ -2,24 +2,34 @@
     {
       "id": 1,
       "name": "Art and decoration",
-      "router":"Art-and-decoration",
+      "price": 90000,
+      "rating": 4,
+      "color": "#DC840A",
       "imageUrl": "/images/craft-resin.jpg"
+      
     },
     {
       "id": 2,
       "name": "Deep pour resin",
-      "router":"Deep-pour-resin",
+      "price": 90000,
+      "rating": 4,
+      "color": "#DC840A",
       "imageUrl": "/images/deep-pour.jpg"
     },
     {
       "id": 3,
       "name": "Floor resin",
-      "router":"Floor-resin",
+      "price": 90000,
+      "rating": 4,
+      "color": "#1A364C",
       "imageUrl": "/images/IMG6.JPG"
     },
     {
         "id": 4,
         "name": "Industrial resin",
+        "price": 90000,
+        "rating": 4,
+       "color": "#1A364C",
         "imageUrl": "/images/industrial-resin.jpg"
       }
 ]
