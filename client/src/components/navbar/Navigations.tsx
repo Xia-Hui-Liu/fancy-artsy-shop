@@ -46,14 +46,12 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
           width="40"
           height="40"
           viewBox="0 0 24 24"
-          className="text-purple-400 w-8 h-8 sm:w-10 sm:h-10"
+          className="text-gray-400 w-8 h-8 sm:w-8 sm:h-8"
         >
-          <path
-            fill="none"
-            stroke="#6B7280"
-            strokeWidth="2"
-            d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
-          />
+        <path
+          fill="currentColor"
+          d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
+        />
         </svg>
       </button>
 

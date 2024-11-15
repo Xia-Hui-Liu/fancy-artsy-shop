@@ -16,17 +16,17 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
   };
 
   return (
-    <nav className="bg-white shadow-md p-2 sm:p-4 flex flex-wrap justify-between items-center mt-2 h-10 sm:h-14 w-full mx-auto mb-20 mb-6 min-h-[64px] relative">
-      <div className="flex justify-start items-center">
+    <nav  className="bg-white flex fixed shadow-md mt-8 sm:flex items-center justify-between min-h-[64px] relative">
+      <div className="flex justify-left items-center ml-[-30px]">
         <Logo />
       </div>
       <div className="flex justify-center">
         <Navigations toggle={toggleMenu} isMenuOpen={isMenuOpen} />
       </div>
-      <div className="flex justify-end items-center space-x-2 sm:space-x-4">
+      <div className="flex items-center space-x-2 sm:space-x-4 ">
         <FaCart cartCount={cartCount} />
       </div>
-      <div>
+      <div className="mr-5 md:mr-10">
         <UserLogin />
       </div>
     </nav>
