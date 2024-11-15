@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 import { FaChevronRight } from 'react-icons/fa'
+import UserLogin from "./UserLogin";
 
 interface NavigationsProps {
   toggle: () => void;
@@ -9,7 +11,6 @@ interface NavigationsProps {
 
 const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
   const menuItems = [
-    // { href: "/", text: "Home" },
     { href: "/expoxy-resin", text: "RESIN" },
     { href: "/collections/resin-molds", text: "RESIN MOLDS" },
     { href: "/collections/color", text: "COLOR" },
@@ -67,14 +68,45 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
               <Link href={href}>
                 <span className="flex justify-between items-center py-2 px-4 text-sm font-semibold hover:text-blue-600 transition-colors duration-300">
                   {text}
-                  <FaChevronRight  className="text-black-200 ml-2" />
+                  <FaChevronRight className="text-black-200 ml-2" />
                 </span>
               </Link>
             </li>
           ))}
+          <div className="py-4 mt-16 border-t border-black-200">
+            <div className="flex justify-evenly mb-4">
+              <Link href="https://www.facebook.com/fancyartsy82/">
+                <Image
+                  src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
+                  alt="facebook"
+                  width={20} 
+                  height={20} 
+                  className="transition-transform transform hover:scale-110"
+                />
+              </Link>
+              <Link href="https://www.instagram.com/">
+                <Image
+                  src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+                  alt="instagram"
+                  width={20}  
+                  height={20} 
+                  className="transition-transform transform hover:scale-110"
+                />
+              </Link>
+              <Link href="https://twitter.com/">
+                <Image
+                  src="https://img.icons8.com/fluent/48/000000/twitter.png"
+                  alt="twitter"
+                  width={20}  
+                  height={20}
+                  className="transition-transform transform hover:scale-110"
+                />
+              </Link>
+            </div>
+          </div>
         </ul>
       )}
-
+      
       {/* Desktop Menu (hidden on mobile) */}
       <ul className="hidden md:flex gap-x-6 text-gray-500">
         {menuItems.map(({ href, text }, index) => (
