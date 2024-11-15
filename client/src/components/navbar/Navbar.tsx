@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
       <div className="flex justify-left items-center ml-[-30px]">
         <Logo />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center ml-[-50px]">
         <Navigations toggle={toggleMenu} isMenuOpen={isMenuOpen} />
       </div>
       <div className="flex items-center space-x-2 sm:space-x-4 ">

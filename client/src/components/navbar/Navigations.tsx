@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect } from "react";
+import { FaChevronRight } from 'react-icons/fa'
 
 interface NavigationsProps {
   toggle: () => void;
@@ -8,17 +9,20 @@ interface NavigationsProps {
 
 const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
   const menuItems = [
-    { href: "/", text: "Home" },
-    { href: "/about", text: "About Us" },
-    { href: "/products", text: "Products" },
-    { href: "/contacts", text: "Contacts" },
+    // { href: "/", text: "Home" },
+    { href: "/expoxy-resin", text: "RESIN" },
+    { href: "/collections/resin-molds", text: "RESIN MOLDS" },
+    { href: "/collections/color", text: "COLOR" },
+    { href: "/diy-tools-accesories", text: "ACCESSORIES" },
+    { href: "/collections/new-arrival", text: "NEW ARRIVAL" },
+    { href: "/holiday-sale", text: "BLACK FRIDAY" },
+    { href: "/collections/diy-projects-instruction", text: "INSPIRATION" },
+    { href: "/suppor", text: "SUPPORT" }
   ];
 
-  // Close the menu when clicking outside
   useEffect(() => {
     const closeMenu = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      // Only close if clicked outside of the mobile menu or the button
       if (isMenuOpen && !target.closest('.mobile-menu') && !target.closest('.menu-toggle-button')) {
         toggle();
       }
@@ -57,12 +61,13 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <ul className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white md:hidden flex flex-col gap-y-4 text-gray-500 shadow-lg p-4 w-56 rounded-lg mobile-menu z-50">
+        <ul className="absolute top-full left-1/3 transform -translate-x-1/2 bg-white md:hidden flex flex-col gap-y-4 text-gray-500 shadow-lg p-4 w-72 h-[100vh] overflow-y-auto rounded-lg mobile-menu z-50">
           {menuItems.map(({ href, text }, index) => (
-            <li key={index} className="w-full">
+            <li key={index} className="w-full border-b border-black-200">
               <Link href={href}>
-                <span className="block py-2 px-4 text-base font-semibold hover:text-blue-600 transition-colors duration-300">
+                <span className="flex justify-between items-center py-2 px-4 text-sm font-semibold hover:text-blue-600 transition-colors duration-300">
                   {text}
+                  <FaChevronRight  className="text-black-200 ml-2" />
                 </span>
               </Link>
             </li>
