@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 import { FaChevronRight } from 'react-icons/fa'
-import UserLogin from "./UserLogin";
 
 interface NavigationsProps {
   toggle: () => void;
