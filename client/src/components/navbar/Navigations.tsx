@@ -9,6 +9,7 @@ interface NavigationsProps {
 }
 
 const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
+
   const menuItems = [
     { href: "/expoxy-resin", text: "RESIN" },
     { href: "/collections/resin-molds", text: "RESIN MOLDS" },
@@ -33,6 +34,8 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
       document.removeEventListener('click', closeMenu);
     };
   }, [isMenuOpen, toggle]);
+
+ 
 
   return (
     <>
