@@ -39,7 +39,7 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
       {/* Mobile Menu Toggle Button */}
       <button
         type="button"
-        className="md:hidden p-2 menu-toggle-button"
+        className="lg:hidden p-2 menu-toggle-button"
         onClick={(e) => {
           e.stopPropagation();
           toggle();
@@ -50,7 +50,7 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
           width="40"
           height="40"
           viewBox="0 0 24 24"
-          className="text-gray-400 w-8 h-8 sm:w-8 sm:h-8"
+          className="text-gray-400 w-8 h-8 md:w-12 md:h-12"
         >
         <path
           fill="currentColor"
@@ -61,7 +61,7 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <ul className="absolute top-full left-1/3 transform -translate-x-1/2 bg-white md:hidden flex flex-col gap-y-4 text-gray-500 shadow-lg p-4 w-72 h-[100vh] overflow-y-auto rounded-lg mobile-menu z-50">
+        <ul className="absolute top-full left-1/3 transform -translate-x-1/2 bg-white lg:hidden flex flex-col gap-y-4 text-gray-500 shadow-lg p-4 w-72 h-[100vh] overflow-y-auto rounded-lg mobile-menu z-50">
           {menuItems.map(({ href, text }, index) => (
             <li key={index} className="w-full border-b border-black-200">
               <Link href={href}>
@@ -107,11 +107,11 @@ const Navigations: React.FC<NavigationsProps> = ({ toggle, isMenuOpen }) => {
       )}
       
       {/* Desktop Menu (hidden on mobile) */}
-      <ul className="hidden md:flex gap-x-6 text-gray-500">
+      <ul className="hidden lg:flex gap-x-5 text-black-500">
         {menuItems.map(({ href, text }, index) => (
           <li key={index}>
             <Link href={href}>
-              <span className="text-base hover:text-blue-600 transition-colors duration-300">
+              <span className="text-xs hover:text-blue-600 transition-colors duration-300">
                 {text}
               </span>
             </Link>
