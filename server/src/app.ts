@@ -1,5 +1,6 @@
 import express, { Request, Response, NextFunction } from 'express';
 import productRoutes from './routes/products';
+import newArrivalsRoutes from './routes/newArrivals';
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', productRoutes);
+app.use('/api', newArrivalsRoutes);
 
 // Health check route
 app.get('/', (req: Request, res: Response) => {

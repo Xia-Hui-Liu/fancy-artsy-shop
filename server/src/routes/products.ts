@@ -2,32 +2,6 @@ import express from 'express';
 import { Router, Request, Response } from 'express';
 import productsData from '../data/products.json';
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  rating: number;
-  imageUrl: string;
-}
-
-interface Subcategory {
-  id: number;
-  name: string;
-  products: Product[];
-}
-
-interface Category {
-  id: number;
-  name: string;
-  subcategories: Subcategory[];
-}
-
-interface ProductData {
-  id: number;
-  name: string;
-  categories: Category[];
-}
-
 const router: Router = express.Router();
 
 // Route to get all categories

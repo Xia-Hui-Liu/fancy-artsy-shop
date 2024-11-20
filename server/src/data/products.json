@@ -16,7 +16,8 @@
                 "name": "Crystal Clear Epoxy Resin",
                 "price": 55.99,
                 "rating": 5,
-                "imageUrl": "/images/castingResin/crystalClearEpoxyResin/Crystal_Clear_Epoxy_Resin.jpeg"
+                "imageUrl": "/images/castingResin/crystalClearEpoxyResin/Crystal_Clear_Epoxy_Resin.jpeg",
+                "createdAt": "2024-11-10"
               }
             ]
           },
@@ -29,7 +30,8 @@
                 "name": "Black Color Resin",
                 "price": 44.99,
                 "rating": 5,
-                "imageUrl": "/images/castingResin/coloredEpoxyResin/Colored_Epoxy_Resin.webp"
+                "imageUrl": "/images/castingResin/coloredEpoxyResin/Colored_Epoxy_Resin.webp",
+                "createdAt": "2024-11-15"
               }
             ]
           }
@@ -48,7 +50,8 @@
                 "name": "Deep Pour Epoxy Resin 51oz",
                 "price": 48.99,
                 "rating": 5,
-                "imageUrl": "/images/deepPourResin/Deep_Pour_Epoxy_Resin.webp"
+                "imageUrl": "/images/deepPourResin/Deep_Pour_Epoxy_Resin.webp",
+                "createdAt": "2024-11-10"
               }
             ]
           }
@@ -67,7 +70,8 @@
                 "name": "Table Top Epoxy Resin Kit",
                 "price": 89.99,
                 "rating": 5,
-                "imageUrl": "/images/coatingResin/Table_Top_Epoxy_Resin_Kit.webp"
+                "imageUrl": "/images/coatingResin/Table_Top_Epoxy_Resin_Kit.webp",
+                "createdAt": "2024-11-11"
               }
             ]
           }
