@@ -4,6 +4,8 @@ import Navbar from '../components/navbar/Navbar';
 import Announcementbar from '@/components/Announcementbar';
 import ServicesSection from '@/components/ServicesSection';
 import CategoriesSection from '@/components/CategoriesSection';
+import TrendingSection from '@/components/TrendingSection';
+import NewArrivalsSection from '@/components/NewArrivalsSection';
 import { useCart } from '../context/CartContext';
 
 const Home: React.FC = () => {
@@ -25,6 +27,8 @@ const Home: React.FC = () => {
       </div>
       <ServicesSection />
       <CategoriesSection />
+      <TrendingSection />
+      <NewArrivalsSection />
     </div>
   );
 };

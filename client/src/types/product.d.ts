@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   rating: number;
   imageUrl: string;
+  createdAt: string;
 }
 
 export interface Subcategory {
