@@ -10,6 +10,7 @@ import Announcementbar from '@/components/Announcementbar';
 import { FaPlane } from 'react-icons/fa';
 import { FaRetweet as FaReturn } from 'react-icons/fa'; 
 import { FaServicestack } from 'react-icons/fa';
+import { images } from '../../next.config';
 
 const Home: React.FC = () => {
   const { cart, addToCart } = useCart();
@@ -57,7 +58,16 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      <div>
+        <h3>Shop by Category</h3>
+        <div>
+          <Link href='/epoxy-resin'>
+            <Image src='images/resin/Crystal-Clear-Expoxy-Resin32.jpeg' alt='expoxy resin'  />
+          </Link>
+
+        </div>
+      </div>
   </div>
     
   );
