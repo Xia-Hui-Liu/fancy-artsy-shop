@@ -3,6 +3,8 @@ export interface Product {
     name: string;
     price: number;
     rating: number;
+    salesCount: number;
+    stockCount: number;
     imageUrl: string;
     createdAt: string;
   }
@@ -19,8 +21,4 @@ export interface Product {
     subcategories: Subcategory[];
   }
   
-  export interface ProductData {
-    id: number;
-    name: string;
-    categories: Category[];
-  }
+  export const products: Category[];
