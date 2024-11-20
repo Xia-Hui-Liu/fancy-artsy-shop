@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { fetchNewArrivals } from '@/services/api';
+import { Product } from '@/types/product';
 
-const newArrivals = [
-  { name: 'Resin Starter Kit', src: '/images/newArrivals/resinStarterKit.jpg', alt: 'Resin Starter Kit' },
-  { name: 'Color Pigments', src: '/images/newArrivals/colorPigments.jpg', alt: 'Color Pigments' },
-  { name: 'Coating Resin', src: '/images/newArrivals/coatingResin.jpg', alt: 'Coating Resin' },
-  { name: 'Silicone Molds', src: '/images/newArrivals/siliconeMolds.jpg', alt: 'Silicone Molds' },
-];
 
 const NewArrivalsSection: React.FC = () => {
+  const [newArrivals, setNewArrivals] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const getNewArrivals = async () => {
+      try {
+        const arrivals = await fetchNewArrivals();
+        console.log(arrivals);
+        setNewArrivals(arrivals);
+      } catch (error) {
+        console.error('Failed to load new arrivals:', error);
+      }
+    };
+
+    getNewArrivals();
+  }, []);
   return (
     <section className="w-full mt-8 px-4">
       <h3 className="text-2xl font-semibold text-center mb-6">New Arrivals</h3>
@@ -19,10 +30,10 @@ const NewArrivalsSection: React.FC = () => {
             className="relative group rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
           >
             <Image
-              src={product.src}
-              alt={product.alt}
-              width={300}
-              height={300}
+              src={product.imageUrl}
+              alt={product.name}
+              width={80}
+              height={80}
               className="object-cover w-full h-full"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

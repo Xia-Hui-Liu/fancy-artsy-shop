@@ -1,16 +1,3 @@
-// import axios from "axios";
-// import { Product } from '../types/product'
-
-// export const fetchProducts = async ():Promise<Product[]> => {
-//     try {
-//         const response = await axios.get<Product[]>('/api/products');
-//         return response.data
-//     } catch (error) {
-//         console.error("Error fetching products:", error);
-//         throw error;
-//     }
-// }
-
 import axios from "axios";
 import { Product, Category, Subcategory } from '../types/product'
 
@@ -79,3 +66,14 @@ export const fetchProductById = async (productId: number): Promise<Product> => {
         throw error;
     }
 }
+
+// Fetch new arrivals
+export const fetchNewArrivals = async (): Promise<Product[]> => {
+    try {
+      const response = await axios.get('/api/new-arrivals');
+      return response.data as Product[];
+    } catch (error) {
+      console.error('Error fetching new arrivals:', error);
+      throw error;
+    }
+  };
