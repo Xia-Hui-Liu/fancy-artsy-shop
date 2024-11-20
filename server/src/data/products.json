@@ -1,44 +1,89 @@
 [
-    {
-      "id": 1,
-      "name": "Art and decoration",
-      "price": 90000,
-      "rating": 4,
-      "color": "#DC840A",
-      "imageUrl": "/images/craft-resin.jpg"
-      
-    },
-    {
-      "id": 2,
-      "name": "Deep pour resin",
-      "price": 90000,
-      "rating": 4,
-      "color": "#DC840A",
-      "imageUrl": "/images/deep-pour.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Floor resin",
-      "price": 90000,
-      "rating": 4,
-      "color": "#1A364C",
-      "imageUrl": "/images/IMG6.JPG"
-    },
-    {
-        "id": 4,
-        "name": "Industrial resin",
-        "price": 90000,
-        "rating": 4,
-       "color": "#1A364C",
-        "imageUrl": "/images/industrial-resin.jpg"
+  {
+    "id": 1,
+    "name": "Epoxy Resin",
+    "categories": [
+      {
+        "id": 101,
+        "name": "Casting Resin",
+        "subcategories": [
+          {
+            "id": 1011,
+            "name": "Crystal Clear Epoxy Resin",
+            "products": [
+              {
+                "id": 10111,
+                "name": "Crystal Clear Epoxy Resin",
+                "price": 55.99,
+                "rating": 5,
+                "imageUrl": "/images/castingResin/crystalClearEpoxyResin/Crystal_Clear_Epoxy_Resin.jpeg"
+              }
+            ]
+          },
+          {
+            "id": 1012,
+            "name": "Color Epoxy Resin",
+            "products": [
+              {
+                "id": 10121,
+                "name": "Black Color Resin",
+                "price": 44.99,
+                "rating": 5,
+                "imageUrl": "/images/castingResin/coloredEpoxyResin/Colored_Epoxy_Resin.webp"
+              }
+            ]
+          }
+        ]
       },
       {
-        "id": 5,
-        "name": "home resin",
-        "price": 90000,
-        "rating": 5,
-       "color": "#1A364C",
-        "imageUrl": "/images/Image-7.png"
+        "id": 102,
+        "name": "Deep Pour Resin",
+        "subcategories": [
+          {
+            "id": 1021,
+            "name": "Deep Pour Epoxy Resin",
+            "products": [
+              {
+                "id": 10211,
+                "name": "Deep Pour Epoxy Resin 51oz",
+                "price": 48.99,
+                "rating": 5,
+                "imageUrl": "/images/deepPourResin/Deep_Pour_Epoxy_Resin.webp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "name": "Coating Resin",
+        "subcategories": [
+          {
+            "id": 1031,
+            "name": "Table Top Epoxy Resin Kit",
+            "products": [
+              {
+                "id": 10311,
+                "name": "Table Top Epoxy Resin Kit",
+                "price": 89.99,
+                "rating": 5,
+                "imageUrl": "/images/coatingResin/Table_Top_Epoxy_Resin_Kit.webp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "name": "Fast Cure Resin",
+        "subcategories": [
+          {
+            "id": 1041,
+            "name": "Quick Dry Resin",
+            "products": []
+          }
+        ]
       }
+    ]
+  }
 ]
-  
