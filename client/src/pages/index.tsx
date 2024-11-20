@@ -10,7 +10,7 @@ import Announcementbar from '@/components/Announcementbar';
 import { FaPlane } from 'react-icons/fa';
 import { FaRetweet as FaReturn } from 'react-icons/fa'; 
 import { FaServicestack } from 'react-icons/fa';
-import { images } from '../../next.config';
+
 
 const Home: React.FC = () => {
   const { cart, addToCart } = useCart();

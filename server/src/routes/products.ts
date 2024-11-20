@@ -2,7 +2,6 @@ import express from 'express';
 import { Router, Request, Response } from 'express';
 import productsData from '../data/products.json';
 
-// Define types to match your data structure
 interface Product {
   id: number;
   name: string;
