@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import productRoutes from './routes/products';
 import newArrivalsRoutes from './routes/newArrivals';
-import bestSellersRoutes from './routes/best-sellers';
+import bestSellersRoutes from './routes/bestSellers';
 
 const app = express();
 
