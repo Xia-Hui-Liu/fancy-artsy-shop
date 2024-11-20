@@ -1,4 +1,14 @@
 
+   // const [products, setProducts] = useState<Product[]>([]);
+
+  // useEffect(() => {
+  //   fetchProducts()
+  //     .then((data) => setProducts(data))
+  //     .catch(console.error); 
+  // }, []);
+
+  // const images = products.map(i => i.imageUrl);
+ 
  {/* <div className="container mx-auto px-4 py-8"> */}
        
        {/* <PhotoAlbum images={images} /> */}
